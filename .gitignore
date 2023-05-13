@@ -1,3 +1,9 @@
+corpus*
+logs*
+.DS_Store
+tmp/
+*.gz
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]

@@ -1,0 +1,82 @@
+for LANGUAGE in ace ban bug jav min sun
+do
+    torchrun \
+        --nproc_per_node 8 src/run_translation.py \
+        --model_name_or_path LazarusNLP/indo-t5-base \
+        --dataset_name indonlp/NusaX-MT \
+        --dataset_config_name ind-$LANGUAGE \
+        --output_dir ./indo-t5-base-nusax-ind-$LANGUAGE \
+        --per_device_train_batch_size 4 \
+        --per_device_eval_batch_size 16 \
+        --learning_rate 1e-3 \
+        --weight_decay 0.01 \
+        --lr_scheduler_type linear \
+        --warmup_ratio 0.1 \
+        --max_steps 500 \
+        --evaluation_strategy steps \
+        --eval_steps 250 \
+        --save_strategy steps \
+        --save_steps 500 \
+        --logging_strategy steps \
+        --logging_steps 10 \
+        --max_source_length 128 \
+        --max_target_length 128 \
+        --val_max_target_length 128 \
+        --pad_to_max_length True \
+        --source_text_column_name text_1 \
+        --target_text_column_name text_2 \
+        --source_lang_column_name text_1_lang \
+        --target_lang_column_name text_2_lang \
+        --preprocessing_num_workers 6 \
+        --overwrite_output_dir \
+        --do_train --do_eval \
+        --predict_with_generate \
+        --bf16 \
+        --torch_compile True \
+        --optim adamw_torch_fused \
+        --report_to tensorboard \
+        --push_to_hub \
+        --hub_model_id LazarusNLP/indo-t5-base-nusax-ind-$LANGUAGE \
+        --hub_private_repo True \
+        --use_auth_token
+
+    torchrun \
+        --nproc_per_node 8 src/run_translation.py \
+        --model_name_or_path LazarusNLP/indo-t5-base \
+        --dataset_name indonlp/NusaX-MT \
+        --dataset_config_name $LANGUAGE-ind \
+        --output_dir ./indo-t5-base-nusax-$LANGUAGE-ind \
+        --per_device_train_batch_size 4 \
+        --per_device_eval_batch_size 16 \
+        --learning_rate 1e-3 \
+        --weight_decay 0.01 \
+        --lr_scheduler_type linear \
+        --warmup_ratio 0.1 \
+        --max_steps 500 \
+        --evaluation_strategy steps \
+        --eval_steps 250 \
+        --save_strategy steps \
+        --save_steps 500 \
+        --logging_strategy steps \
+        --logging_steps 10 \
+        --max_source_length 128 \
+        --max_target_length 128 \
+        --val_max_target_length 128 \
+        --pad_to_max_length True \
+        --source_text_column_name text_1 \
+        --target_text_column_name text_2 \
+        --source_lang_column_name text_1_lang \
+        --target_lang_column_name text_2_lang \
+        --preprocessing_num_workers 6 \
+        --overwrite_output_dir \
+        --do_train --do_eval \
+        --predict_with_generate \
+        --bf16 \
+        --torch_compile True \
+        --optim adamw_torch_fused \
+        --report_to tensorboard \
+        --push_to_hub \
+        --hub_model_id LazarusNLP/indo-t5-base-nusax-$LANGUAGE-ind \
+        --hub_private_repo True \
+        --use_auth_token
+done

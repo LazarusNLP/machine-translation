@@ -1,0 +1,646 @@
+@article{m2m-100,
+  title     = {Beyond english-centric multilingual machine translation},
+  author    = {Fan, Angela and Bhosale, Shruti and Schwenk, Holger and Ma, Zhiyi and El-Kishky, Ahmed and Goyal, Siddharth and Baines, Mandeep and Celebi, Onur and Wenzek, Guillaume and Chaudhary, Vishrav and others},
+  journal   = {The Journal of Machine Learning Research},
+  volume    = {22},
+  number    = {1},
+  pages     = {4839--4886},
+  year      = {2021},
+  publisher = {JMLRORG}
+}
+
+@misc{nllb,
+  doi       = {10.48550/ARXIV.2207.04672},
+  url       = {https://arxiv.org/abs/2207.04672},
+  author    = {{NLLB Team} and Costa-jussà, Marta R. and Cross, James and Çelebi, Onur and Elbayad, Maha and Heafield, Kenneth and Heffernan, Kevin and Kalbassi, Elahe and Lam, Janice and Licht, Daniel and Maillard, Jean and Sun, Anna and Wang, Skyler and Wenzek, Guillaume and Youngblood, Al and Akula, Bapi and Barrault, Loic and Gonzalez, Gabriel Mejia and Hansanti, Prangthip and Hoffman, John and Jarrett, Semarley and Sadagopan, Kaushik Ram and Rowe, Dirk and Spruit, Shannon and Tran, Chau and Andrews, Pierre and Ayan, Necip Fazil and Bhosale, Shruti and Edunov, Sergey and Fan, Angela and Gao, Cynthia and Goswami, Vedanuj and Guzmán, Francisco and Koehn, Philipp and Mourachko, Alexandre and Ropers, Christophe and Saleem, Safiyyah and Schwenk, Holger and Wang, Jeff},
+  keywords  = {Computation and Language (cs.CL), Artificial Intelligence (cs.AI), FOS: Computer and information sciences, FOS: Computer and information sciences, I.2.7, 68T50},
+  title     = {No Language Left Behind: Scaling Human-Centered Machine Translation},
+  publisher = {arXiv},
+  year      = {2022},
+  copyright = {Creative Commons Attribution Share Alike 4.0 International}
+}
+
+@article{t5,
+  title     = {Exploring the limits of transfer learning with a unified text-to-text transformer},
+  author    = {Raffel, Colin and Shazeer, Noam and Roberts, Adam and Lee, Katherine and Narang, Sharan and Matena, Michael and Zhou, Yanqi and Li, Wei and Liu, Peter J},
+  journal   = {The Journal of Machine Learning Research},
+  volume    = {21},
+  number    = {1},
+  pages     = {5485--5551},
+  year      = {2020},
+  publisher = {JMLRORG}
+}
+
+@inproceedings{mt5,
+  title     = {m{T}5: A Massively Multilingual Pre-trained Text-to-Text Transformer},
+  author    = {Xue, Linting  and
+               Constant, Noah  and
+               Roberts, Adam  and
+               Kale, Mihir  and
+               Al-Rfou, Rami  and
+               Siddhant, Aditya  and
+               Barua, Aditya  and
+               Raffel, Colin},
+  booktitle = {Proceedings of the 2021 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies},
+  month     = jun,
+  year      = {2021},
+  address   = {Online},
+  publisher = {Association for Computational Linguistics},
+  url       = {https://aclanthology.org/2021.naacl-main.41},
+  doi       = {10.18653/v1/2021.naacl-main.41},
+  pages     = {483--498},
+  abstract  = {The recent {``}Text-to-Text Transfer Transformer{''} (T5) leveraged a unified text-to-text format and scale to attain state-of-the-art results on a wide variety of English-language NLP tasks. In this paper, we introduce mT5, a multilingual variant of T5 that was pre-trained on a new Common Crawl-based dataset covering 101 languages. We detail the design and modified training of mT5 and demonstrate its state-of-the-art performance on many multilingual benchmarks. We also describe a simple technique to prevent {``}accidental translation{''} in the zero-shot setting, where a generative model chooses to (partially) translate its prediction into the wrong language. All of the code and model checkpoints used in this work are publicly available.}
+}
+
+@inproceedings{bart,
+  title     = {{BART}: Denoising Sequence-to-Sequence Pre-training for Natural Language Generation, Translation, and Comprehension},
+  author    = {Lewis, Mike  and
+               Liu, Yinhan  and
+               Goyal, Naman  and
+               Ghazvininejad, Marjan  and
+               Mohamed, Abdelrahman  and
+               Levy, Omer  and
+               Stoyanov, Veselin  and
+               Zettlemoyer, Luke},
+  booktitle = {Proceedings of the 58th Annual Meeting of the Association for Computational Linguistics},
+  month     = jul,
+  year      = {2020},
+  address   = {Online},
+  publisher = {Association for Computational Linguistics},
+  url       = {https://aclanthology.org/2020.acl-main.703},
+  doi       = {10.18653/v1/2020.acl-main.703},
+  pages     = {7871--7880},
+  abstract  = {We present BART, a denoising autoencoder for pretraining sequence-to-sequence models. BART is trained by (1) corrupting text with an arbitrary noising function, and (2) learning a model to reconstruct the original text. It uses a standard Tranformer-based neural machine translation architecture which, despite its simplicity, can be seen as generalizing BERT (due to the bidirectional encoder), GPT (with the left-to-right decoder), and other recent pretraining schemes. We evaluate a number of noising approaches, finding the best performance by both randomly shuffling the order of sentences and using a novel in-filling scheme, where spans of text are replaced with a single mask token. BART is particularly effective when fine tuned for text generation but also works well for comprehension tasks. It matches the performance of RoBERTa on GLUE and SQuAD, and achieves new state-of-the-art results on a range of abstractive dialogue, question answering, and summarization tasks, with gains of up to 3.5 ROUGE. BART also provides a 1.1 BLEU increase over a back-translation system for machine translation, with only target language pretraining. We also replicate other pretraining schemes within the BART framework, to understand their effect on end-task performance.}
+}
+
+@article{mbart,
+  title     = {Multilingual Denoising Pre-training for Neural Machine Translation},
+  author    = {Liu, Yinhan  and
+               Gu, Jiatao  and
+               Goyal, Naman  and
+               Li, Xian  and
+               Edunov, Sergey  and
+               Ghazvininejad, Marjan  and
+               Lewis, Mike  and
+               Zettlemoyer, Luke},
+  journal   = {Transactions of the Association for Computational Linguistics},
+  volume    = {8},
+  year      = {2020},
+  address   = {Cambridge, MA},
+  publisher = {MIT Press},
+  url       = {https://aclanthology.org/2020.tacl-1.47},
+  doi       = {10.1162/tacl_a_00343},
+  pages     = {726--742},
+  abstract  = {This paper demonstrates that multilingual denoising pre-training produces significant performance gains across a wide variety of machine translation (MT) tasks. We present mBART{---}a sequence-to-sequence denoising auto-encoder pre-trained on large-scale monolingual corpora in many languages using the BART objective (Lewis et al., 2019). mBART is the first method for pre-training a complete sequence-to-sequence model by denoising full texts in multiple languages, whereas previous approaches have focused only on the encoder, decoder, or reconstructing parts of the text. Pre-training a complete model allows it to be directly fine-tuned for supervised (both sentence-level and document-level) and unsupervised machine translation, with no task- specific modifications. We demonstrate that adding mBART initialization produces performance gains in all but the highest-resource settings, including up to 12 BLEU points for low resource MT and over 5 BLEU points for many document-level and unsupervised models. We also show that it enables transfer to language pairs with no bi-text or that were not in the pre-training corpus, and present extensive analysis of which factors contribute the most to effective pre-training.1}
+}
+
+@inproceedings{indobart,
+  title     = {{I}ndo{NLG}: Benchmark and Resources for Evaluating {I}ndonesian Natural Language Generation},
+  author    = {Cahyawijaya, Samuel  and
+               Winata, Genta Indra  and
+               Wilie, Bryan  and
+               Vincentio, Karissa  and
+               Li, Xiaohong  and
+               Kuncoro, Adhiguna  and
+               Ruder, Sebastian  and
+               Lim, Zhi Yuan  and
+               Bahar, Syafri  and
+               Khodra, Masayu  and
+               Purwarianti, Ayu  and
+               Fung, Pascale},
+  booktitle = {Proceedings of the 2021 Conference on Empirical Methods in Natural Language Processing},
+  month     = nov,
+  year      = {2021},
+  address   = {Online and Punta Cana, Dominican Republic},
+  publisher = {Association for Computational Linguistics},
+  url       = {https://aclanthology.org/2021.emnlp-main.699},
+  doi       = {10.18653/v1/2021.emnlp-main.699},
+  pages     = {8875--8898},
+  abstract  = {Natural language generation (NLG) benchmarks provide an important avenue to measure progress and develop better NLG systems. Unfortunately, the lack of publicly available NLG benchmarks for low-resource languages poses a challenging barrier for building NLG systems that work well for languages with limited amounts of data. Here we introduce IndoNLG, the first benchmark to measure natural language generation (NLG) progress in three low-resource{---}yet widely spoken{---}languages of Indonesia: Indonesian, Javanese, and Sundanese. Altogether, these languages are spoken by more than 100 million native speakers, and hence constitute an important use case of NLG systems today. Concretely, IndoNLG covers six tasks: summarization, question answering, chit-chat, and three different pairs of machine translation (MT) tasks. We collate a clean pretraining corpus of Indonesian, Sundanese, and Javanese datasets, Indo4B-Plus, which is used to pretrain our models: IndoBART and IndoGPT. We show that IndoBART and IndoGPT achieve competitive performance on all tasks{---}despite using only one-fifth the parameters of a larger multilingual model, mBART-large (Liu et al., 2020). This finding emphasizes the importance of pretraining on closely related, localized languages to achieve more efficient learning and faster inference at very low-resource languages like Javanese and Sundanese.}
+}
+
+@article{flores-101,
+  title     = {The {F}lores-101 Evaluation Benchmark for Low-Resource and Multilingual Machine Translation},
+  author    = {Goyal, Naman  and
+               Gao, Cynthia  and
+               Chaudhary, Vishrav  and
+               Chen, Peng-Jen  and
+               Wenzek, Guillaume  and
+               Ju, Da  and
+               Krishnan, Sanjana  and
+               Ranzato, Marc{'}Aurelio  and
+               Guzm{\'a}n, Francisco  and
+               Fan, Angela},
+  journal   = {Transactions of the Association for Computational Linguistics},
+  volume    = {10},
+  year      = {2022},
+  address   = {Cambridge, MA},
+  publisher = {MIT Press},
+  url       = {https://aclanthology.org/2022.tacl-1.30},
+  doi       = {10.1162/tacl_a_00474},
+  pages     = {522--538},
+  abstract  = {One of the biggest challenges hindering progress in low-resource and multilingual machine translation is the lack of good evaluation benchmarks. Current evaluation benchmarks either lack good coverage of low-resource languages, consider only restricted domains, or are low quality because they are constructed using semi-automatic procedures. In this work, we introduce the Flores-101 evaluation benchmark, consisting of 3001 sentences extracted from English Wikipedia and covering a variety of different topics and domains. These sentences have been translated in 101 languages by professional translators through a carefully controlled process. The resulting dataset enables better assessment of model quality on the long tail of low-resource languages, including the evaluation of many-to-many multilingual translation systems, as all translations are fully aligned. By publicly releasing such a high-quality and high-coverage dataset, we hope to foster progress in the machine translation community and beyond.}
+}
+
+@inproceedings{nep-sin-eng,
+  title     = {The {FLORES} Evaluation Datasets for Low-Resource Machine Translation: {N}epali{--}{E}nglish and {S}inhala{--}{E}nglish},
+  author    = {Guzm{\'a}n, Francisco  and
+               Chen, Peng-Jen  and
+               Ott, Myle  and
+               Pino, Juan  and
+               Lample, Guillaume  and
+               Koehn, Philipp  and
+               Chaudhary, Vishrav  and
+               Ranzato, Marc{'}Aurelio},
+  booktitle = {Proceedings of the 2019 Conference on Empirical Methods in Natural Language Processing and the 9th International Joint Conference on Natural Language Processing (EMNLP-IJCNLP)},
+  month     = nov,
+  year      = {2019},
+  address   = {Hong Kong, China},
+  publisher = {Association for Computational Linguistics},
+  url       = {https://aclanthology.org/D19-1632},
+  doi       = {10.18653/v1/D19-1632},
+  pages     = {6098--6111},
+  abstract  = {For machine translation, a vast majority of language pairs in the world are considered low-resource because they have little parallel data available. Besides the technical challenges of learning with limited supervision, it is difficult to evaluate methods trained on low-resource language pairs because of the lack of freely and publicly available benchmarks. In this work, we introduce the FLORES evaluation datasets for Nepali{--}English and Sinhala{--} English, based on sentences translated from Wikipedia. Compared to English, these are languages with very different morphology and syntax, for which little out-of-domain parallel data is available and for which relatively large amounts of monolingual data are freely available. We describe our process to collect and cross-check the quality of translations, and we report baseline performance using several learning settings: fully supervised, weakly supervised, semi-supervised, and fully unsupervised. Our experiments demonstrate that current state-of-the-art methods perform rather poorly on this benchmark, posing a challenge to the research community working on low-resource MT. Data and code to reproduce our experiments are available at https://github.com/facebookresearch/flores.}
+}
+
+@inproceedings{aji-etal-2022-one,
+  title     = {One Country, 700+ Languages: {NLP} Challenges for Underrepresented Languages and Dialects in {I}ndonesia},
+  author    = {Aji, Alham Fikri  and
+               Winata, Genta Indra  and
+               Koto, Fajri  and
+               Cahyawijaya, Samuel  and
+               Romadhony, Ade  and
+               Mahendra, Rahmad  and
+               Kurniawan, Kemal  and
+               Moeljadi, David  and
+               Prasojo, Radityo Eko  and
+               Baldwin, Timothy  and
+               Lau, Jey Han  and
+               Ruder, Sebastian},
+  booktitle = {Proceedings of the 60th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)},
+  month     = may,
+  year      = {2022},
+  address   = {Dublin, Ireland},
+  publisher = {Association for Computational Linguistics},
+  url       = {https://aclanthology.org/2022.acl-long.500},
+  doi       = {10.18653/v1/2022.acl-long.500},
+  pages     = {7226--7249},
+  abstract  = {NLP research is impeded by a lack of resources and awareness of the challenges presented by underrepresented languages and dialects. Focusing on the languages spoken in Indonesia, the second most linguistically diverse and the fourth most populous nation of the world, we provide an overview of the current state of NLP research for Indonesia{'}s 700+ languages. We highlight challenges in Indonesian NLP and how these affect the performance of current NLP systems. Finally, we provide general recommendations to help develop NLP technology not only for languages of Indonesia but also other underrepresented languages.}
+}
+
+@misc{bahasa-kita-2019,
+  author = {{Bahasa Kita}},
+  month  = {03},
+  title  = {{Depdiknas Terbitkan Peta Bahasa}},
+  url    = {https://www.bahasakita.com/id/bahas-bahasa/depdiknas-terbitkan-peta-bahasa/},
+  year   = {2019}
+}
+
+@misc{kemendikbud-bahasa-daerah,
+  author = {{Badan Pengembangan Bahasa dan Perbukuan}},
+  title  = {{Bahasa Daerah Di Indonesia}},
+  url    = {https://dapobas.kemdikbud.go.id/homecat.php?show=url/petabahasa},
+  year   = {2019}
+}
+
+@inproceedings{transformers,
+  author    = {Vaswani, Ashish and Shazeer, Noam and Parmar, Niki and Uszkoreit, Jakob and Jones, Llion and Gomez, Aidan N and Kaiser, \L ukasz and Polosukhin, Illia},
+  booktitle = {Advances in Neural Information Processing Systems},
+  editor    = {I. Guyon and U. Von Luxburg and S. Bengio and H. Wallach and R. Fergus and S. Vishwanathan and R. Garnett},
+  pages     = {},
+  publisher = {Curran Associates, Inc.},
+  title     = {Attention is All you Need},
+  url       = {https://proceedings.neurips.cc/paper_files/paper/2017/file/3f5ee243547dee91fbd053c1c4a845aa-Paper.pdf},
+  volume    = {30},
+  year      = {2017}
+}
+
+@inproceedings{attention,
+  author    = {Dzmitry Bahdanau and
+               Kyunghyun Cho and
+               Yoshua Bengio},
+  editor    = {Yoshua Bengio and
+               Yann LeCun},
+  title     = {Neural Machine Translation by Jointly Learning to Align and Translate},
+  booktitle = {3rd International Conference on Learning Representations, {ICLR} 2015,
+               San Diego, CA, USA, May 7-9, 2015, Conference Track Proceedings},
+  year      = {2015},
+  url       = {http://arxiv.org/abs/1409.0473},
+  timestamp = {Wed, 17 Jul 2019 10:40:54 +0200},
+  biburl    = {https://dblp.org/rec/journals/corr/BahdanauCB14.bib},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
+}
+
+@article{gpt,
+  title     = {Improving language understanding by generative pre-training},
+  author    = {Radford, Alec and Narasimhan, Karthik and Salimans, Tim and Sutskever, Ilya and others},
+  year      = {2018},
+  publisher = {OpenAI}
+}
+
+@inproceedings{bert,
+  title     = {{BERT}: Pre-training of Deep Bidirectional Transformers for Language Understanding},
+  author    = {Devlin, Jacob  and
+               Chang, Ming-Wei  and
+               Lee, Kenton  and
+               Toutanova, Kristina},
+  booktitle = {Proceedings of the 2019 Conference of the North {A}merican Chapter of the Association for Computational Linguistics: Human Language Technologies, Volume 1 (Long and Short Papers)},
+  month     = jun,
+  year      = {2019},
+  address   = {Minneapolis, Minnesota},
+  publisher = {Association for Computational Linguistics},
+  url       = {https://aclanthology.org/N19-1423},
+  doi       = {10.18653/v1/N19-1423},
+  pages     = {4171--4186},
+  abstract  = {We introduce a new language representation model called BERT, which stands for Bidirectional Encoder Representations from Transformers. Unlike recent language representation models (Peters et al., 2018a; Radford et al., 2018), BERT is designed to pre-train deep bidirectional representations from unlabeled text by jointly conditioning on both left and right context in all layers. As a result, the pre-trained BERT model can be fine-tuned with just one additional output layer to create state-of-the-art models for a wide range of tasks, such as question answering and language inference, without substantial task-specific architecture modifications. BERT is conceptually simple and empirically powerful. It obtains new state-of-the-art results on eleven natural language processing tasks, including pushing the GLUE score to 80.5 (7.7 point absolute improvement), MultiNLI accuracy to 86.7{\%} (4.6{\%} absolute improvement), SQuAD v1.1 question answering Test F1 to 93.2 (1.5 point absolute improvement) and SQuAD v2.0 Test F1 to 83.1 (5.1 point absolute improvement).}
+}
+
+@inproceedings{fair-fsmt,
+  title     = {{F}acebook {FAIR}{'}s {WMT}19 News Translation Task Submission},
+  author    = {Ng, Nathan  and
+               Yee, Kyra  and
+               Baevski, Alexei  and
+               Ott, Myle  and
+               Auli, Michael  and
+               Edunov, Sergey},
+  booktitle = {Proceedings of the Fourth Conference on Machine Translation (Volume 2: Shared Task Papers, Day 1)},
+  month     = aug,
+  year      = {2019},
+  address   = {Florence, Italy},
+  publisher = {Association for Computational Linguistics},
+  url       = {https://aclanthology.org/W19-5333},
+  doi       = {10.18653/v1/W19-5333},
+  pages     = {314--319},
+  abstract  = {This paper describes Facebook FAIR{'}s submission to the WMT19 shared news translation task. We participate in four language directions, English {\textless}-{\textgreater} German and English {\textless}-{\textgreater} Russian in both directions. Following our submission from last year, our baseline systems are large BPE-based transformer models trained with the FAIRSEQ sequence modeling toolkit. This year we experiment with different bitext data filtering schemes, as well as with adding filtered back-translated data. We also ensemble and fine-tune our models on domain-specific data, then decode using noisy channel model reranking. Our system improves on our previous system{'}s performance by 4.5 BLEU points and achieves the best case-sensitive BLEU score for the translation direction English→Russian.}
+}
+
+@inproceedings{TiedemannThottingal:EAMT2020,
+  author    = {J{\"o}rg Tiedemann and Santhosh Thottingal},
+  title     = {{OPUS-MT} — {B}uilding open translation services for the {W}orld},
+  booktitle = {Proceedings of the 22nd Annual Conferenec of the European Association for Machine Translation (EAMT)},
+  year      = {2020},
+  address   = {Lisbon, Portugal}
+}
+
+@inproceedings{mariannmt,
+  title     = {Marian: Fast Neural Machine Translation in {C++}},
+  author    = {Junczys-Dowmunt, Marcin and Grundkiewicz, Roman and
+               Dwojak, Tomasz and Hoang, Hieu and Heafield, Kenneth and
+               Neckermann, Tom and Seide, Frank and Germann, Ulrich and
+               Fikri Aji, Alham and Bogoychev, Nikolay and
+               Martins, Andr\'{e} F. T. and Birch, Alexandra},
+  booktitle = {Proceedings of ACL 2018, System Demonstrations},
+  pages     = {116--121},
+  publisher = {Association for Computational Linguistics},
+  year      = {2018},
+  month     = {July},
+  address   = {Melbourne, Australia},
+  url       = {http://www.aclweb.org/anthology/P18-4020}
+}
+
+@inproceedings{mmnmt,
+  title     = {Massively Multilingual Neural Machine Translation},
+  author    = {Aharoni, Roee  and
+               Johnson, Melvin  and
+               Firat, Orhan},
+  booktitle = {Proceedings of the 2019 Conference of the North {A}merican Chapter of the Association for Computational Linguistics: Human Language Technologies, Volume 1 (Long and Short Papers)},
+  month     = jun,
+  year      = {2019},
+  address   = {Minneapolis, Minnesota},
+  publisher = {Association for Computational Linguistics},
+  url       = {https://aclanthology.org/N19-1388},
+  doi       = {10.18653/v1/N19-1388},
+  pages     = {3874--3884},
+  abstract  = {Multilingual Neural Machine Translation enables training a single model that supports translation from multiple source languages into multiple target languages. We perform extensive experiments in training massively multilingual NMT models, involving up to 103 distinct languages and 204 translation directions simultaneously. We explore different setups for training such models and analyze the trade-offs between translation quality and various modeling decisions. We report results on the publicly available TED talks multilingual corpus where we show that massively multilingual many-to-many models are effective in low resource settings, outperforming the previous state-of-the-art while supporting up to 59 languages in 116 translation directions in a single model. Our experiments on a large-scale dataset with 103 languages, 204 trained directions and up to one million examples per direction also show promising results, surpassing strong bilingual baselines and encouraging future work on massively multilingual NMT.}
+}
+
+@inproceedings{m2m-africa,
+  title     = {A Few Thousand Translations Go a Long Way! Leveraging Pre-trained Models for {A}frican News Translation},
+  author    = {Adelani, David  and
+               Alabi, Jesujoba  and
+               Fan, Angela  and
+               Kreutzer, Julia  and
+               Shen, Xiaoyu  and
+               Reid, Machel  and
+               Ruiter, Dana  and
+               Klakow, Dietrich  and
+               Nabende, Peter  and
+               Chang, Ernie  and
+               Gwadabe, Tajuddeen  and
+               Sackey, Freshia  and
+               Dossou, Bonaventure F. P.  and
+               Emezue, Chris  and
+               Leong, Colin  and
+               Beukman, Michael  and
+               Muhammad, Shamsuddeen  and
+               Jarso, Guyo  and
+               Yousuf, Oreen  and
+               Niyongabo Rubungo, Andre  and
+               Hacheme, Gilles  and
+               Wairagala, Eric Peter  and
+               Nasir, Muhammad Umair  and
+               Ajibade, Benjamin  and
+               Ajayi, Tunde  and
+               Gitau, Yvonne  and
+               Abbott, Jade  and
+               Ahmed, Mohamed  and
+               Ochieng, Millicent  and
+               Aremu, Anuoluwapo  and
+               Ogayo, Perez  and
+               Mukiibi, Jonathan  and
+               Ouoba Kabore, Fatoumata  and
+               Kalipe, Godson  and
+               Mbaye, Derguene  and
+               Tapo, Allahsera Auguste  and
+               Memdjokam Koagne, Victoire  and
+               Munkoh-Buabeng, Edwin  and
+               Wagner, Valencia  and
+               Abdulmumin, Idris  and
+               Awokoya, Ayodele  and
+               Buzaaba, Happy  and
+               Sibanda, Blessing  and
+               Bukula, Andiswa  and
+               Manthalu, Sam},
+  booktitle = {Proceedings of the 2022 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies},
+  month     = jul,
+  year      = {2022},
+  address   = {Seattle, United States},
+  publisher = {Association for Computational Linguistics},
+  url       = {https://aclanthology.org/2022.naacl-main.223},
+  doi       = {10.18653/v1/2022.naacl-main.223},
+  pages     = {3053--3070},
+  abstract  = {Recent advances in the pre-training for language models leverage large-scale datasets to create multilingual models. However, low-resource languages are mostly left out in these datasets. This is primarily because many widely spoken languages that are not well represented on the web and therefore excluded from the large-scale crawls for datasets. Furthermore, downstream users of these models are restricted to the selection of languages originally chosen for pre-training. This work investigates how to optimally leverage existing pre-trained models to create low-resource translation systems for 16 African languages. We focus on two questions: 1) How can pre-trained models be used for languages not included in the initial pretraining? and 2) How can the resulting translation models effectively transfer to new domains? To answer these questions, we create a novel African news corpus covering 16 languages, of which eight languages are not part of any existing evaluation dataset. We demonstrate that the most effective strategy for transferring both additional languages and additional domains is to leverage small quantities of high-quality translation data to fine-tune large pre-trained models.}
+}
+
+@inproceedings{mmtafrica,
+  title     = {{MMTA}frica: Multilingual Machine Translation for {A}frican Languages},
+  author    = {Emezue, Chris Chinenye  and
+               Dossou, Bonaventure F. P.},
+  booktitle = {Proceedings of the Sixth Conference on Machine Translation},
+  month     = nov,
+  year      = {2021},
+  address   = {Online},
+  publisher = {Association for Computational Linguistics},
+  url       = {https://aclanthology.org/2021.wmt-1.48},
+  pages     = {398--411},
+  abstract  = {In this paper, we focus on the task of multilingual machine translation for African languages and describe our contribution in the 2021 WMT Shared Task: Large-Scale Multilingual Machine Translation. We introduce MMTAfrica, the first many-to-many multilingual translation system for six African languages: Fon (fon), Igbo (ibo), Kinyarwanda (kin), Swahili/Kiswahili (swa), Xhosa (xho), and Yoruba (yor) and two non-African languages: English (eng) and French (fra). For multilingual translation concerning African languages, we introduce a novel backtranslation and reconstruction objective, BT{\&}REC, inspired by the random online back translation and T5 modelling framework respectively, to effectively leverage monolingual data. Additionally, we report improvements from MMTAfrica over the FLORES 101 benchmarks (spBLEU gains ranging from +0.58 in Swahili to French to +19.46 in French to Xhosa).}
+}
+
+@inproceedings{fauzi2018dialect,
+  title        = {Dialect and identity: A case study of javanese use in WhatsApp and line},
+  author       = {Fauzi, Andri Imam and Puspitorini, Dwi},
+  booktitle    = {IOP Conference Series: Earth and Environmental Science},
+  volume       = {175},
+  number       = {1},
+  pages        = {012111},
+  year         = {2018},
+  organization = {IOP Publishing}
+}
+
+@inproceedings{wolf2019huggingface,
+  title     = {Transformers: State-of-the-Art Natural Language Processing},
+  author    = {Wolf, Thomas  and
+               Debut, Lysandre  and
+               Sanh, Victor  and
+               Chaumond, Julien  and
+               Delangue, Clement  and
+               Moi, Anthony  and
+               Cistac, Pierric  and
+               Rault, Tim  and
+               Louf, Remi  and
+               Funtowicz, Morgan  and
+               Davison, Joe  and
+               Shleifer, Sam  and
+               von Platen, Patrick  and
+               Ma, Clara  and
+               Jernite, Yacine  and
+               Plu, Julien  and
+               Xu, Canwen  and
+               Le Scao, Teven  and
+               Gugger, Sylvain  and
+               Drame, Mariama  and
+               Lhoest, Quentin  and
+               Rush, Alexander},
+  booktitle = {Proceedings of the 2020 Conference on Empirical Methods in Natural Language Processing: System Demonstrations},
+  month     = oct,
+  year      = {2020},
+  address   = {Online},
+  publisher = {Association for Computational Linguistics},
+  url       = {https://aclanthology.org/2020.emnlp-demos.6},
+  doi       = {10.18653/v1/2020.emnlp-demos.6},
+  pages     = {38--45},
+  abstract  = {Recent progress in natural language processing has been driven by advances in both model architecture and model pretraining. Transformer architectures have facilitated building higher-capacity models and pretraining has made it possible to effectively utilize this capacity for a wide variety of tasks. Transformers is an open-source library with the goal of opening up these advances to the wider machine learning community. The library consists of carefully engineered state-of-the art Transformer architectures under a unified API. Backing this library is a curated collection of pretrained models made by and available for the community. Transformers is designed to be extensible by researchers, simple for practitioners, and fast and robust in industrial deployments. The library is available at https://github.com/huggingface/transformers.}
+}
+
+@inproceedings{nusax,
+  title     = {{N}usa{X}: Multilingual Parallel Sentiment Dataset for 10 {I}ndonesian Local Languages},
+  author    = {Winata, Genta Indra  and
+               Aji, Alham Fikri  and
+               Cahyawijaya, Samuel  and
+               Mahendra, Rahmad  and
+               Koto, Fajri  and
+               Romadhony, Ade  and
+               Kurniawan, Kemal  and
+               Moeljadi, David  and
+               Prasojo, Radityo Eko  and
+               Fung, Pascale  and
+               Baldwin, Timothy  and
+               Lau, Jey Han  and
+               Sennrich, Rico  and
+               Ruder, Sebastian},
+  booktitle = {Proceedings of the 17th Conference of the European Chapter of the Association for Computational Linguistics},
+  month     = may,
+  year      = {2023},
+  address   = {Dubrovnik, Croatia},
+  publisher = {Association for Computational Linguistics},
+  url       = {https://aclanthology.org/2023.eacl-main.57},
+  pages     = {815--834},
+  abstract  = {Natural language processing (NLP) has a significant impact on society via technologies such as machine translation and search engines. Despite its success, NLP technology is only widely available for high-resource languages such as English and Chinese, while it remains inaccessible to many languages due to the unavailability of data resources and benchmarks. In this work, we focus on developing resources for languages in Indonesia. Despite being the second most linguistically diverse country, most languages in Indonesia are categorized as endangered and some are even extinct. We develop the first-ever parallel resource for 10 low-resource languages in Indonesia. Our resource includes sentiment and machine translation datasets, and bilingual lexicons. We provide extensive analyses and describe challenges for creating such resources. We hope this work can spark NLP research on Indonesian and other underrepresented languages.}
+}
+
+@inproceedings{sacrebleu,
+  title     = {A Call for Clarity in Reporting {BLEU} Scores},
+  author    = {Post, Matt},
+  booktitle = {Proceedings of the Third Conference on Machine Translation: Research Papers},
+  month     = oct,
+  year      = {2018},
+  address   = {Brussels, Belgium},
+  publisher = {Association for Computational Linguistics},
+  url       = {https://aclanthology.org/W18-6319},
+  doi       = {10.18653/v1/W18-6319},
+  pages     = {186--191},
+  abstract  = {The field of machine translation faces an under-recognized problem because of inconsistency in the reporting of scores from its dominant metric. Although people refer to {``}the{''} BLEU score, BLEU is in fact a parameterized metric whose values can vary wildly with changes to these parameters. These parameters are often not reported or are hard to find, and consequently, BLEU scores between papers cannot be directly compared. I quantify this variation, finding differences as high as 1.8 between commonly used configurations. The main culprit is different tokenization and normalization schemes applied to the reference. Pointing to the success of the parsing community, I suggest machine translation researchers settle upon the BLEU scheme used by the annual Conference on Machine Translation (WMT), which does not allow for user-supplied reference processing, and provide a new tool, SACREBLEU, to facilitate this.}
+}
+
+@inproceedings{bleu,
+  title     = {BLEU: a method for automatic evaluation of machine translation},
+  author    = {Papineni, Kishore and Roukos, Salim and Ward, Todd and Zhu, Wei-Jing},
+  booktitle = {Proceedings of the 40th annual meeting of the Association for Computational Linguistics},
+  pages     = {311--318},
+  year      = {2002}
+}
+
+@misc{ethnologue,
+  title     = {Ethnologue: Languages of the World},
+  url       = {https://www.ethnologue.com/},
+  edition   = {Twenty-fifth},
+  address   = {Dallas, Texas, USA},
+  journal   = {Ethnologue},
+  publisher = {SIL International},
+  author    = {Eberhard, David M and Simons, Gary F and Fennig, Charles D},
+  year      = {2022}
+}
+
+@inproceedings{xlmr,
+  title     = {Unsupervised Cross-lingual Representation Learning at Scale},
+  author    = {Conneau, Alexis  and
+               Khandelwal, Kartikay  and
+               Goyal, Naman  and
+               Chaudhary, Vishrav  and
+               Wenzek, Guillaume  and
+               Guzm{\'a}n, Francisco  and
+               Grave, Edouard  and
+               Ott, Myle  and
+               Zettlemoyer, Luke  and
+               Stoyanov, Veselin},
+  booktitle = {Proceedings of the 58th Annual Meeting of the Association for Computational Linguistics},
+  month     = jul,
+  year      = {2020},
+  address   = {Online},
+  publisher = {Association for Computational Linguistics},
+  url       = {https://aclanthology.org/2020.acl-main.747},
+  doi       = {10.18653/v1/2020.acl-main.747},
+  pages     = {8440--8451},
+  abstract  = {This paper shows that pretraining multilingual language models at scale leads to significant performance gains for a wide range of cross-lingual transfer tasks. We train a Transformer-based masked language model on one hundred languages, using more than two terabytes of filtered CommonCrawl data. Our model, dubbed XLM-R, significantly outperforms multilingual BERT (mBERT) on a variety of cross-lingual benchmarks, including +14.6{\%} average accuracy on XNLI, +13{\%} average F1 score on MLQA, and +2.4{\%} F1 score on NER. XLM-R performs particularly well on low-resource languages, improving 15.7{\%} in XNLI accuracy for Swahili and 11.4{\%} for Urdu over previous XLM models. We also present a detailed empirical analysis of the key factors that are required to achieve these gains, including the trade-offs between (1) positive transfer and capacity dilution and (2) the performance of high and low resource languages at scale. Finally, we show, for the first time, the possibility of multilingual modeling without sacrificing per-language performance; XLM-R is very competitive with strong monolingual models on the GLUE and XNLI benchmarks. We will make our code and models publicly available.}
+}
+
+@inproceedings{adamw,
+  author    = {Ilya Loshchilov and
+               Frank Hutter},
+  title     = {Decoupled Weight Decay Regularization},
+  booktitle = {7th International Conference on Learning Representations, {ICLR} 2019,
+               New Orleans, LA, USA, May 6-9, 2019},
+  publisher = {OpenReview.net},
+  year      = {2019},
+  url       = {https://openreview.net/forum?id=Bkg6RiCqY7},
+  timestamp = {Thu, 25 Jul 2019 14:26:04 +0200},
+  biburl    = {https://dblp.org/rec/conf/iclr/LoshchilovH19.bib},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
+}
+
+@inbook{paszke2019pytorch,
+  author    = {Paszke, Adam and Gross, Sam and Massa, Francisco and Lerer, Adam and Bradbury, James and Chanan, Gregory and Killeen, Trevor and Lin, Zeming and Gimelshein, Natalia and Antiga, Luca and Desmaison, Alban and K\"{o}pf, Andreas and Yang, Edward and DeVito, Zach and Raison, Martin and Tejani, Alykhan and Chilamkurthy, Sasank and Steiner, Benoit and Fang, Lu and Bai, Junjie and Chintala, Soumith},
+  title     = {PyTorch: An Imperative Style, High-Performance Deep Learning Library},
+  year      = {2019},
+  publisher = {Curran Associates Inc.},
+  address   = {Red Hook, NY, USA},
+  abstract  = {Deep learning frameworks have often focused on either usability or speed, but not both. PyTorch is a machine learning library that shows that these two goals are in fact compatible: it provides an imperative and Pythonic programming style that supports code as a model, makes debugging easy and is consistent with other popular scientific computing libraries, while remaining efficient and supporting hardware accelerators such as GPUs.In this paper, we detail the principles that drove the implementation of PyTorch and how they are reflected in its architecture. We emphasize that every aspect of PyTorch is a regular Python program under the full control of its user. We also explain how the careful and pragmatic implementation of the key components of its runtime enables them to work together to achieve compelling performance. We demonstrate the efficiency of individual subsystems, as well as the overall speed of PyTorch on several common benchmarks.},
+  booktitle = {Proceedings of the 33rd International Conference on Neural Information Processing Systems},
+  articleno = {721},
+  numpages  = {12}
+}
+
+@inproceedings{koto-koto-2020-towards,
+  title     = {Towards Computational Linguistics in {M}inangkabau Language: Studies on Sentiment Analysis and Machine Translation},
+  author    = {Koto, Fajri  and
+               Koto, Ikhwan},
+  booktitle = {Proceedings of the 34th Pacific Asia Conference on Language, Information and Computation},
+  month     = oct,
+  year      = {2020},
+  address   = {Hanoi, Vietnam},
+  publisher = {Association for Computational Linguistics},
+  url       = {https://aclanthology.org/2020.paclic-1.17},
+  pages     = {138--148}
+}
+
+@article{kreutzer-etal-2022-quality,
+  title     = {Quality at a Glance: An Audit of Web-Crawled Multilingual Datasets},
+  author    = {Kreutzer, Julia  and
+               Caswell, Isaac  and
+               Wang, Lisa  and
+               Wahab, Ahsan  and
+               van Esch, Daan  and
+               Ulzii-Orshikh, Nasanbayar  and
+               Tapo, Allahsera  and
+               Subramani, Nishant  and
+               Sokolov, Artem  and
+               Sikasote, Claytone  and
+               Setyawan, Monang  and
+               Sarin, Supheakmungkol  and
+               Samb, Sokhar  and
+               Sagot, Beno{\^\i}t  and
+               Rivera, Clara  and
+               Rios, Annette  and
+               Papadimitriou, Isabel  and
+               Osei, Salomey  and
+               Suarez, Pedro Ortiz  and
+               Orife, Iroro  and
+               Ogueji, Kelechi  and
+               Rubungo, Andre Niyongabo  and
+               Nguyen, Toan Q.  and
+               M{\"u}ller, Mathias  and
+               M{\"u}ller, Andr{\'e}  and
+               Muhammad, Shamsuddeen Hassan  and
+               Muhammad, Nanda  and
+               Mnyakeni, Ayanda  and
+               Mirzakhalov, Jamshidbek  and
+               Matangira, Tapiwanashe  and
+               Leong, Colin  and
+               Lawson, Nze  and
+               Kudugunta, Sneha  and
+               Jernite, Yacine  and
+               Jenny, Mathias  and
+               Firat, Orhan  and
+               Dossou, Bonaventure F. P.  and
+               Dlamini, Sakhile  and
+               de Silva, Nisansa  and
+               {\c{C}}abuk Ball{\i}, Sakine  and
+               Biderman, Stella  and
+               Battisti, Alessia  and
+               Baruwa, Ahmed  and
+               Bapna, Ankur  and
+               Baljekar, Pallavi  and
+               Azime, Israel Abebe  and
+               Awokoya, Ayodele  and
+               Ataman, Duygu  and
+               Ahia, Orevaoghene  and
+               Ahia, Oghenefego  and
+               Agrawal, Sweta  and
+               Adeyemi, Mofetoluwa},
+  journal   = {Transactions of the Association for Computational Linguistics},
+  volume    = {10},
+  year      = {2022},
+  address   = {Cambridge, MA},
+  publisher = {MIT Press},
+  url       = {https://aclanthology.org/2022.tacl-1.4},
+  doi       = {10.1162/tacl_a_00447},
+  pages     = {50--72}
+}
+
+@article{banjarese,
+  author     = {Nasution, Arbi Haza and Murakami, Yohei and Ishida, Toru},
+  title      = {Plan Optimization to Bilingual Dictionary Induction for Low-Resource Language Families},
+  year       = {2021},
+  issue_date = {March 2021},
+  publisher  = {Association for Computing Machinery},
+  address    = {New York, NY, USA},
+  volume     = {20},
+  number     = {2},
+  issn       = {2375-4699},
+  url        = {https://doi.org/10.1145/3448215},
+  doi        = {10.1145/3448215},
+  journal    = {ACM Trans. Asian Low-Resour. Lang. Inf. Process.},
+  month      = {mar},
+  articleno  = {29},
+  numpages   = {28},
+  keywords   = {low-resource languages, pivot-based bilingual lexicon induction, Plan optimization, closely related languages}
+}
+
+@article{vincentio2022automatic,
+  title   = {Automatic Question Generation using RNN-based and Pre-trained Transformer-based Models in Low Resource Indonesian Language.},
+  author  = {Vincentio, Karissa and Suhartono, Derwin},
+  journal = {Informatica (03505596)},
+  volume  = {46},
+  number  = {7},
+  year    = {2022}
+}
